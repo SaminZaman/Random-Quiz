@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ 
+   <head>
+   <title>Trivia Test</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap" rel="stylesheet">
+   </head>
+
+
+   <div>
+       <body>
+
+           <h1>Random Quiz</h1>
+           <hr>
+
+           <h2>Question 1</h2>
+           <p>What year was the <em>Great Fire of London</em>? 
+           </p>
+           <img class="blackborder" src="media/fire.jpg" alt="Fire of London" width="400px">
+           <p class="italic">Answer: <input id="fireQ" type="number"></p>
+           <p id="fireFB" class="feedback"></p>
+           <hr>
+          
+           <h2>Question 2</h2>
+           <p>Which of the following is <strong>not</strong> a sports league?</p>
+               <ul>
+                   <li>NBA</li>
+                   <li>NFL</li>
+                   <li>MLB</li>
+                   <li>MTV</li>
+                   <li>MLS</li>
+                   <li>NHL</li>
+               </ul>
+           <p class="italic">Answer: <input id="sportQ" type="text"></p>
+           <p id="sportFB" class="feedback"></p>
+           <hr>
+              
+           <h2>Question 3</h2>
+           <p>Which show is the following picture and audio from?</p>
+           <img src="media/Spongebob.png" alt="picture not available" height="300px">
+           <p><audio controls>
+               <source src="Media/Sponge Bob Square Pants.mp3" type="audio/mpeg">
+           </audio>
+           </p>
+           <p class="italic">Answer: <input id="spongebobQ" type="text"></p>
+           <p id="spongebobFB" class="feedback"></p>
+           <hr>
+
+           <h2>Question 4</h2>
+           <p>What is responsible for making plants green? (<a href="http://www.edu.pe.ca/gray/class_pages/rcfleming/cells/notes.htm" target="_blank">HINT</a>)</p>
+           <ul>
+               <li>Chlorophyll</li>
+               <li>Mitochondria</li>
+               <li>Food coloring</li>
+               <li>Water</li>
+           </ul>
+           <p class="italic">Answer: <input id="greenQ" type="text"></p>
+           <p id="greenFB" class="feedback"></p>
+           <hr>
+
+           <h2>Question 5</h2>
+           <p>What country does this cricketer play for?</p>
+           <img src="media/Shakib.jpg" alt="Shakib al Hasan">
+           <p class="italic">Answer: <input id="shakibQ" type="text"></p>
+           <p id="shakibFB" class="feedback"></p>
+           <hr>
+
+           <h2>Results</h2>
+           <p><button id="mark-btn" type="button">Mark Quiz</button> Your score is <strong><span id="score">_</span>/5 (<span id="percentScore">__</span>%)</strong></p> 
+
+           <p>Thanks for taking this <span class="finalwords">Random Quiz!</span></p>
+
+       </body>
+       <!-- Load Javascript -->
+       <script src="main.js"></script>
+   </div>
+</html>
